@@ -1,0 +1,35 @@
+<div class="bg-white">
+
+  <h2>Alla todos</h2>
+
+  <p> {{empty}} </p>
+
+  <div class="sort-buttons">
+    <button class="activeSort">
+      <a href="/todos/all">Sortera Äldst-Nyast</a>
+    </button>
+    <button>
+      <a href="/todos/all/sorted">Sortera Nyast-Äldst</a>
+    </button>
+  </div>
+  {{#each todoList}}
+    <div class="list">
+      <span class="date"> {{Created}} </span>
+      <a href="/todos/{{_id}}">{{Description}}</a>
+      <span class="done">
+        {{#if Done}}
+          Klar
+        {{else}}
+          Ej klar
+        {{/if}}
+      </span>
+    </div>
+  {{/each}}
+
+  <div class="sort-buttons">
+
+    <button type="button">
+      <a href="/todos/ny">Skapa ny todo</a>
+    </button>
+  </div>
+</div>

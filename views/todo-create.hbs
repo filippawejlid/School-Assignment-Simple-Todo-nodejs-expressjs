@@ -1,0 +1,17 @@
+<div class="bg-white">
+
+  <h4 class="error">
+    {{error}}
+  </h4>
+
+  <h2>Skapa ny todo</h2>
+
+  <form class="form" action="/todos/ny" method="post">
+
+    <label for="desc">Vad ska du göra?</label>
+    <input type="text" name="Description" id="desc" value="{{Description}}" />
+    <br />
+
+    <input id="inputSubmit" type="submit" value="Skapa" />
+  </form>
+</div>

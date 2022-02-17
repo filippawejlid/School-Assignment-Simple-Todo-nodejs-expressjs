@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Explora&family=Text+Me+One&family=Xanh+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel&family=Josefin+Slab:ital,wght@0,300;1,300&family=Nanum+Myeongjo&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");
+
+* {
+  /* font-family: "Explora", cursive; */
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+*:hover {
+  transition: 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(58, 137, 148);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+}
+
+.bg-white {
+  width: 70%;
+  min-height: 80vh;
+  padding: 50px;
+  background-color: white;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+button,
+#inputSubmit {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #5adfd836;
+  border: 1px #e0e0e0 solid;
+  /* border: none; */
+  border-radius: 2px;
+}
+
+input {
+  padding: 10px;
+}
+
+button:hover,
+#inputSubmit:hover {
+  background-color: #adcfd37e;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Startsida */
+header {
+  /* background-color: #739c90; */
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.3);
+
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Text Me One", sans-serif;
+}
+
+header a:hover {
+  color: rgb(192, 207, 216);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 50vh;
+}
+
+.home-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-button button {
+  margin: 0 20;
+}
+
+/* Att göra */
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: black solid 1px;
+  border-radius: 2px;
+  padding: 5px;
+
+  margin: 0 auto 10px;
+  width: 60%;
+}
+
+.list a {
+  color: black;
+  margin: 20px;
+}
+
+.date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-style: oblique;
+}
+
+/* Alla todos */
+
+.activeSort {
+  background-color: #84b5bb;
+}
+
+.activeSort a {
+  font-weight: 500;
+  color: rgb(233, 233, 233);
+}
+
+.activeSort:hover {
+  background-color: #84b5bb;
+}
+
+.sort-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sort-buttons button {
+  padding: 10px;
+}
+
+.done {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-style: oblique;
+  font-size: smaller;
+}
+
+/* Single */
+
+.single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status {
+  /* width: 30%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-btn {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.single-btn form {
+  margin: 0;
+}
+
+.edit {
+  width: 100px;
+  margin: 10px;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.delete {
+  width: 100px;
+  background-color: rgb(231, 199, 199);
+  border: none;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  opacity: 0.7;
+}
+
+/* Skapa todo */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form input {
+  width: 40%;
+}
+
+#inputSubmit {
+  width: min-content;
+  padding: 5px;
+}
+
+.error {
+  color: rgb(189, 13, 13);
+  text-align: center;
+}
+
+/* Ändra todo */
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.update-form input,
+.update-form select {
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Delete */
+
+.big {
+  font-size: x-large;
+  margin: 10px;
+}
+
+.del {
+  display: flex;
+  justify-content: center;
+}

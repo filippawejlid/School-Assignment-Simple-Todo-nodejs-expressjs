@@ -1,0 +1,16 @@
+<div class="bg-white">
+  <h2>Ändra todo</h2>
+
+  <form class="update-form" action="/todos/update/{{_id}}" method="post">
+
+    <input type="text" name="Description" value="{{Description}}" />
+    <select required name="Done">
+      <option value="">Klar?</option>
+      <option value="Ja">Ja</option>
+      <option value="Nej">Nej</option>
+    </select>
+    <input id="inputSubmit" type="submit" value="Spara ändringar" />
+
+  </form>
+
+</div>

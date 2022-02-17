@@ -1,0 +1,15 @@
+<div class="bg-white">
+  <h2>Att göra</h2>
+
+  <p> {{empty}} </p>
+
+  {{#each undoneList}}
+    <div class="list">
+
+      <span class="date"> {{Created}} </span>
+      <a href="/todos/{{_id}}">{{Description}}</a>
+    </div>
+
+  {{/each}}
+
+</div>

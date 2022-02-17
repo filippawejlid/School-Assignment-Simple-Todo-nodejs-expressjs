@@ -1,0 +1,30 @@
+<div class="bg-white">
+
+  <div class="single">
+
+    <h2> {{Description}} </h2>
+    <p> {{todo.Created}} </p>
+    <div class="status">
+      <span>
+        Status:&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>
+      {{#if Done}}
+        <span> Klar</span>
+      {{else}}
+        <span>Ej klar</span>
+      {{/if}}
+
+    </div>
+  </div>
+
+  <div class="single-btn">
+
+    <button class="edit">
+      <a href="/todos/update/{{_id}}">Ändra</a>
+    </button>
+    <form action="/todos/delete/{{_id}}" method="post">
+      <input class="delete" type="submit" value="Radera" />
+    </form>
+
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="bg-white">
+
+  <h2>Har gjort</h2>
+
+  <p> {{empty}} </p>
+
+  {{#each doneList}}
+    <div class="list">
+
+      <span class="date"> {{Created}} </span>
+      <a href="/todos/{{_id}}">{{Description}}</a>
+    </div>
+
+  {{/each}}
+
+</div>
